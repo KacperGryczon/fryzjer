@@ -1,0 +1,522 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Roboto, Verdana, sans-serif;
+}
+
+:root {
+  --h1-padding-top: 32px;
+  --h1-padding-bottom: 16px;
+  --h2-padding-top: 16px;
+  --h2-padding-bottom: 16px;
+  --p-padding-top: 8px;
+  --p-padding-bottom: 16px;
+}
+
+.pOrange {
+  color: rgb(235, 195, 52);
+  padding-top: 64px;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+nav {
+  background: black;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navContainer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  align-items: center;
+  height: 100px;
+  color: white;
+}
+.navContainer p {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 0 20px;
+}
+nav ul li a {
+  color: white;
+}
+nav ul li a:hover {
+  color: rgb(235, 195, 52);
+}
+
+.główna {
+  background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)),
+    url("https://images.unsplash.com/photo-1667539916609-c706d5b7ed65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYXJiZXIlMjBzaG9wJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzYwOTc2MTg4fDA&ixlib=rb-4.1.0&q=80&w=1080");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.głównaContainer {
+  width: 40%;
+  margin-left: 40px;
+  padding-bottom: 128px;
+}
+
+.głównaContainer h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  padding-top: var(--h1-padding-top);
+  padding-bottom: var(--h1-padding-bottom);
+  text-align: start;
+}
+.główna .głównaContainer-buttons {
+  display: flex;
+  justify-content: flex-start;
+  width: 85%;
+  padding-bottom: var(--p-padding-bottom);
+}
+
+.główna button {
+  padding: 25px 60px;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: var(--h1-padding-top);
+  cursor: pointer;
+}
+.główna .btn1 {
+  background-color: hsl(47, 82%, 56%);
+  margin-right: 10px;
+}
+
+.główna .btn1:hover {
+  background-color: hsl(47, 82%, 45%);
+}
+.główna .btn2:hover {
+  background-color: hsl(0, 0%, 89%);
+}
+.główna .btn1:active {
+  background-color: hsl(47, 82%, 40%);
+}
+.główna .btn2:active {
+  background-color: hsl(0, 0%, 84%);
+}
+
+.usługi {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.usługi .pOrange {
+  padding-top: var(--h1-padding-top);
+}
+.usługi p {
+  padding-top: var(--p-padding-top);
+  padding-bottom: var(--p-padding-bottom);
+  text-align: center;
+}
+
+.usługi h2 {
+  padding-top: var(--h2-padding-top);
+  padding-bottom: var(--h2-padding-bottom);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.usługi-p {
+  width: 50%;
+}
+
+.usługiCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 40px;
+  margin-bottom: 128px;
+  gap: 1em;
+}
+
+.usługiCards .card {
+  border: 1px solid grey;
+  background-color: rgb(51, 51, 51);
+  border-radius: 15px;
+  padding: 40px 20px;
+  font-weight: 200;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.card i {
+  background-color: rgb(99, 101, 57);
+  padding: 16px;
+  border-radius: 5px;
+  color: rgb(255, 255, 0);
+  font-size: 1.5rem;
+}
+
+.card h3 {
+  margin: 16px 0;
+  font-weight: 400;
+}
+
+.card p {
+  color: rgb(187, 187, 187);
+  text-align: start;
+}
+
+.card ul {
+  list-style-position: inside;
+  margin: 0;
+}
+.card ul li {
+  color: gray;
+  text-align: start;
+}
+
+.card ul li::marker {
+  color: yellow;
+}
+
+/* GALERIA */
+
+.galeria {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria p {
+  padding-top: var(--p-padding-top);
+  padding-bottom: var(--p-padding-bottom);
+  text-align: center;
+}
+
+.galeria h2 {
+  padding-top: var(--h2-padding-top);
+  padding-bottom: var(--h2-padding-bottom);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.galeria-p {
+  width: 50%;
+}
+
+.galeriaBtn {
+  padding: 25px 60px;
+  border: 4px solid orange;
+  border-radius: 10px;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: var(--h1-padding-top);
+  cursor: pointer;
+  margin-bottom: 64px;
+  transition: transform 1s, filter 1s ease-in-out;
+  filter: brightness(100%);
+}
+
+.galeriaBtn:hover {
+  filter: brightness(120%);
+}
+
+.galeriaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 40px;
+  margin-bottom: 64px;
+  gap: 1em;
+  overflow: hidden;
+}
+
+.galeriaContainer img {
+  flex: 1 1 calc(25% - 1em); /* two per row accounting for gap */
+  max-width: calc(25% - 1em);
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  aspect-ratio: 1 / 1;
+  transition: transform 1s, filter 1s ease-in-out;
+  filter: brightness(80%);
+  justify-self: start;
+  align-self: flex-start;
+}
+
+.galeriaContainer img:hover {
+  filter: brightness(100%);
+}
+
+/* CENNIK */
+
+.cennik {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cennik h2 {
+  padding-top: var(--h2-padding-top);
+  padding-bottom: var(--h2-padding-bottom);
+  text-align: center;
+}
+.cennik p {
+  padding-bottom: var(--p-padding-bottom);
+  padding-top: var(--p-padding-top);
+  text-align: center;
+}
+
+.cennik .cennikContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 40px;
+  margin-bottom: 128px;
+  gap: 3em;
+  width: 90%;
+}
+
+.cennikContainer .card {
+  flex: 1 1 calc(33% - 3em); /* 4 per row that shrink/grow */
+  max-width: calc(25% - 3em);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 20px;
+  border: 4px solid orange;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.cennikContainer .card h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.cennikContainer .card p {
+  color: grey;
+  text-align: start;
+}
+
+.cennikContainer .card h2 {
+  font-size: 3rem;
+  text-align: start;
+}
+
+.cennikContainer .card li {
+  padding: 2px 0;
+  color: white;
+  font-weight: 200;
+}
+
+/* KONTAKT */
+
+.kontakt {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kontakt .kontaktH2 {
+  text-align: center;
+}
+
+.kontakt .kontaktP {
+  text-align: center;
+  padding-top: var(--p-padding-top);
+  padding-bottom: var(--p-padding-bottom);
+}
+
+.kontaktContainer {
+  display: flex;
+  justify-content: start;
+  margin: 0 40px;
+  margin-bottom: 128px;
+  gap: 3em;
+  width: 90%;
+}
+
+.kontaktContainerDodatkowe {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  flex: 1 1 calc(50% - 1em);
+  max-width: calc(50% - 1em);
+}
+
+.kontaktContainerMapy {
+  flex: 1 1 calc(50% - 1em);
+  max-width: calc(50% - 1em);
+  min-width: auto;
+}
+
+.kontaktContainerMapy iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.kontaktContainerDodatkowe .card {
+  border: 2px solid grey;
+  border-radius: 15px;
+  padding: 20px 20px;
+  display: flex;
+}
+
+.kontaktContainerDodatkowe .card i {
+  height: 20px;
+  padding: 0;
+  background: transparent;
+}
+.kontaktContainerDodatkowe .card .cardInfo {
+  padding-left: 20px;
+  height: 100%;
+  justify-content: space-between;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  border-top: 2px solid grey;
+}
+
+.footerInfo {
+  margin: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerInfo ul {
+  list-style-type: none;
+}
+
+.footerInfo ul li {
+  padding: 4px 0;
+}
+.footerInfo a {
+  text-decoration: none;
+  color: white;
+}
+.footerInfo ul li a:hover {
+  color: rgb(235, 195, 52);
+}
+
+.footerInfoCard {
+  width: 20%;
+}
+
+.footerInfoCard .ulY {
+  display: flex;
+  justify-content: start;
+  gap: 1em;
+  width: 40%;
+  margin-top: 16px;
+}
+.footerInfoCard .ulY i {
+  font-size: 1.5rem;
+  background-color: rgb(69, 69, 69);
+  padding: 8px;
+  border-radius: 50%;
+}
+.footerInfoCard h2 {
+  padding-bottom: 16px;
+}
+
+.footerPrawa {
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 32px;
+}
+
+@media only screen and (width <= 1200px) {
+  .usługiCards .card {
+    flex-basis: 42%;
+    height: 250px;
+  }
+  .galeriaContainer img {
+    flex: 1 1 calc(50% - 1em); /* two per row accounting for gap */
+    max-width: calc(50% - 1em);
+  }
+  .cennikContainer .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (width <= 800px) {
+  .usługiCards .card {
+    min-width: 250px;
+    flex-basis: 100%;
+  }
+  .kontaktContainer {
+    flex-wrap: wrap;
+  }
+  .kontaktContainerDodatkowe {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .kontaktContainerMapy {
+    flex: 1 1 100%;
+    max-width: 100%;
+    height: 300px;
+    min-width: none;
+  }
+  .footerInfo {
+    flex-direction: column;
+    gap: 3em;
+  }
+  .footerInfoCard {
+    width: 100%;
+  }
+}
+
+@media only screen and (width <= 500px) {
+  .galeriaContainer {
+    margin: 0 20px;
+  }
+  .galeriaContainer img {
+    flex: 1 1 100%; /* two per row accounting for gap */
+    max-width: calc(100%);
+  }
+  .galeriaBtn {
+    padding: 15px 25px;
+    margin: 64 20px;
+  }
+}
