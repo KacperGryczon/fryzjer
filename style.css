@@ -176,8 +176,8 @@ nav ul li a:hover {
   border-radius: 15px;
   padding: 40px 20px;
   font-weight: 200;
-  width: 20%;
   align-items: center;
+  width: 20%;
   justify-content: center;
   height: auto;
 }
@@ -320,7 +320,7 @@ nav ul li a:hover {
 
 .cennikContainer .card {
   flex: 1 1 calc(33% - 3em); /* 4 per row that shrink/grow */
-  max-width: calc(25% - 3em);
+  max-width: calc(30% - 3em);
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -482,6 +482,7 @@ footer {
   padding-bottom: 64px !important;
   padding-top: 16px !important;
   font-size: 1.2rem !important;
+  width: 80%;
 }
 
 .sectionH2 {
@@ -493,7 +494,7 @@ footer {
 @media only screen and (width <= 1200px) {
   .usługiCards .card {
     flex-basis: 42%;
-    height: 250px;
+    height: auto;
   }
   .galeriaContainer img {
     flex: 1 1 calc(50% - 1em); /* two per row accounting for gap */
@@ -524,6 +525,10 @@ footer {
   }
   nav ul {
     display: none;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    transition: right 300ms ease-out;
   }
 
   nav .active {
@@ -535,6 +540,7 @@ footer {
     background-color: black;
     width: 40%;
     text-align: center;
+    transition: all 0.3s ease;
   }
   nav ul li {
     padding: 10px 0;
@@ -549,8 +555,8 @@ footer {
   }
 
   .usługiCards .card {
-    min-width: 250px;
     flex-basis: 100%;
+    height: auto;
   }
   .kontaktContainer {
     flex-wrap: wrap;
@@ -575,6 +581,19 @@ footer {
 }
 
 @media only screen and (width <= 500px) {
+  .sectionH2 {
+    font-size: 1.3rem !important;
+  }
+  .pOrange {
+    font-size: 1rem !important;
+  }
+  .sectionp {
+    font-size: 1rem !important;
+    text-align: center;
+  }
+  .cennikContainer .card h2 {
+    font-size: 2rem;
+  }
   .głównaContainer {
     width: 80%;
     margin: 20px;
@@ -586,8 +605,7 @@ footer {
     font-size: 1rem;
   }
   .głównaContainer .głównaAddText {
-    font-size: 1.1rem;
-    display: none;
+    font-size: 1rem;
   }
   .galeriaContainer {
     margin: 0 20px;
