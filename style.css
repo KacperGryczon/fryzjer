@@ -471,6 +471,9 @@ footer {
     flex: 1 1 calc(50% - 1em); /* two per row accounting for gap */
     max-width: calc(50% - 1em);
   }
+  .cennikContainer {
+    gap: 1em !important;
+  }
   .cennikContainer .card {
     flex: 1 1 100%;
     max-width: 100%;
