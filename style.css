@@ -59,6 +59,10 @@ nav ul li a:hover {
   color: #ff8c32;
 }
 
+#sidebar {
+  display: none;
+}
+
 .openSidebar,
 .closeSidebar {
   padding: 5px;
@@ -149,7 +153,7 @@ nav ul li a:hover {
 }
 
 .card i {
-  background-color: rgb(99, 101, 57);
+  background-color: rgba(156, 110, 24, 0.329);
   padding: 16px;
   border-radius: 5px;
   color: #ff8c32;
@@ -474,9 +478,6 @@ footer {
 }
 
 @media only screen and (width <= 800px) {
-  nav .nav ul #sidebar {
-    display: none !important;
-  }
   .głównaContainer h1 {
     font-size: 3rem;
   }
@@ -492,22 +493,23 @@ footer {
   }
   nav ul {
     display: none;
-    position: fixed;
-    right: -100%;
-    top: 0;
-    transition: right 300ms ease-out;
   }
 
-  nav .active {
+  nav #sidebar {
     position: fixed;
-    display: block;
-    right: 0;
     top: 0;
+    right: -100%;
     height: 100vh;
-    background-color: #06113c;
     width: 40%;
+    background-color: black;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: right 0.3s ease;
+    z-index: 100;
+    display: block;
+  }
+
+  #sidebar.active {
+    right: 0;
   }
   nav ul li {
     padding: 10px 0;
@@ -515,10 +517,10 @@ footer {
   }
   .closeSidebar {
     display: block;
-    justify-self: end;
     padding: 10px;
-    margin-right: 35px;
-    margin-top: 15px;
+    margin: 15px 0;
+    margin-left: auto;
+    margin-right: 25px;
   }
 
   .usługiCards .card {
@@ -549,7 +551,7 @@ footer {
 
 @media only screen and (width <= 500px) {
   .sectionH2 {
-    font-size: 1.3rem !important;
+    font-size: 1.5rem !important;
   }
   .pOrange {
     font-size: 1rem !important;
@@ -585,7 +587,7 @@ footer {
     padding: 15px 25px;
     margin: 64 20px;
   }
-  nav .active {
+  #sidebar.active {
     width: 100%;
   }
 }
