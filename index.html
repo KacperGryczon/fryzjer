@@ -14,18 +14,26 @@
   <body>
     <nav>
       <div class="navContainer">
-        <p>SALON FRYZJERSKI</p>
-        <ul>
-          <li><a href="">Główna</a></li>
-          <li><a href="">Usługi</a></li>
-          <li><a href="">Galeria</a></li>
-          <li><a href="">Cennik</a></li>
-          <li><a href="">Kontakt</a></li>
+        <p>MARLEN</p>
+        <button onclick="openSidebar()" class="openSidebar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul id="sidebar">
+          <li>
+            <button onclick="closeSidebar()" class="closeSidebar">
+              <i class="fa-solid fa-x"></i>
+            </button>
+          </li>
+          <li><a href="#główna">Główna</a></li>
+          <li><a href="#usługi">Usługi</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#cennik">Cennik</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
         </ul>
       </div>
     </nav>
     <main>
-      <div class="główna">
+      <div id="główna" class="główna">
         <div class="głównaContainer">
           <p class="pOrange">NAJWYŻSZEJ JAKOŚCI PIELĘGNACJA</p>
           <h1>Tam gdzie styl spotyka precyzję</h1>
@@ -35,10 +43,10 @@
           </p>
         </div>
       </div>
-      <div class="usługi">
+      <div id="usługi" class="usługi">
         <p class="pOrange">NASZE USŁUGI</p>
-        <h2>Profesjonalna pielęgnacja</h2>
-        <p class="usługi-p">
+        <h2 class="sectionH2">Profesjonalna pielęgnacja</h2>
+        <p class="sectionp" class="usługi-p">
           Od klasycznych cięć po współczesne style - oferujemy pełen zakres
           usług, abyś zawsze wyglądał perfekcyjnie
         </p>
@@ -87,10 +95,10 @@
           </div>
         </div>
       </div>
-      <div class="galeria">
+      <div id="galeria" class="galeria">
         <p class="pOrange">NASZE PRACE</p>
-        <h2>Galeria stylów</h2>
-        <p class="galeria-p">
+        <h2 class="sectionH2">Galeria stylów</h2>
+        <p class="sectionp" class="galeria-p">
           Zobacz nasze najlepsze realizacje oraz atmosferę panującą w naszym
           salonie
         </p>
@@ -147,10 +155,10 @@
         </div>
         <button class="galeriaBtn">ZOBACZ WIĘCEJ</button>
       </div>
-      <div class="cennik">
+      <div id="cennik" class="cennik">
         <p class="pOrange">CENNIK</p>
-        <h2>Jakość warta swojej ceny</h2>
-        <p>
+        <h2 class="sectionH2">Jakość warta swojej ceny</h2>
+        <p class="sectionp">
           Przejrzyste ceny za usługi premium. Bez ukrytych opłat, tylko
           wyjątkowa obsługa
         </p>
@@ -190,10 +198,10 @@
           </div>
         </div>
       </div>
-      <div class="kontakt">
+      <div id="kontakt" class="kontakt">
         <p class="pOrange">KONTAKT</p>
-        <h2 class="kontkatH2">Odwiedź nas już dziś</h2>
-        <p class="kontaktP">
+        <h2 class="sectionH2" class="kontkatH2">Odwiedź nas już dziś</h2>
+        <p class="sectionp" class="kontaktP">
           Zapraszamy bez rezerwacji lub umów wizytę wcześniej
         </p>
         <div class="kontaktContainer">
@@ -267,10 +275,10 @@
         <div class="footerInfoCard">
           <h2>Szybkie linki</h2>
           <ul>
-            <li><a href="">Usługi</a></li>
-            <li><a href="">Galeria</a></li>
-            <li><a href="">Cennik</a></li>
-            <li><a href="">Kontakt</a></li>
+            <li><a href="#usługi">Usługi</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#cennik">Cennik</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
           </ul>
         </div>
         <div class="footerInfoCard">
