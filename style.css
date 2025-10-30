@@ -15,7 +15,7 @@
 }
 
 .pOrange {
-  color: #ff8c32;
+  color: #fd7d1b;
   padding-top: 64px !important;
   font-size: 1.3rem;
 }
@@ -56,7 +56,7 @@ nav ul li a {
   color: #eeeeee;
 }
 nav ul li a:hover {
-  color: #ff8c32;
+  color: #fd7d1b;
 }
 
 #sidebar {
@@ -102,7 +102,7 @@ nav ul li a:hover {
 }
 
 .usługi {
-  background-color: #06113c;
+  background-color: #050c2b;
   color: #eeeeee;
   display: flex;
   flex-direction: column;
@@ -142,7 +142,7 @@ nav ul li a:hover {
 
 .usługiCards .card {
   border: 1px solid #dddddd;
-  background-color: rgb(51, 51, 51);
+  background-color: transparent;
   border-radius: 15px;
   padding: 40px 20px;
   font-weight: 200;
@@ -156,7 +156,7 @@ nav ul li a:hover {
   background-color: rgba(156, 110, 24, 0.329);
   padding: 16px;
   border-radius: 5px;
-  color: #ff8c32;
+  color: #fd7d1b;
   font-size: 1.5rem;
 }
 
@@ -180,13 +180,14 @@ nav ul li a:hover {
 }
 
 .card ul li::marker {
-  color: #ff8c32;
+  color: #fd7d1b;
+  font-size: 1.2rem;
 }
 
 /* GALERIA */
 
 .galeria {
-  background-color: #06113c;
+  background-color: #050c2b;
   color: #eeeeee;
   display: flex;
   flex-direction: column;
@@ -214,9 +215,9 @@ nav ul li a:hover {
 
 .galeriaBtn {
   padding: 25px 60px;
-  border: 4px solid #ff8c32;
+  border: 4px solid #fd7d1b;
   border-radius: 10px;
-  color: #06113c;
+  color: #050c2b;
   font-size: 1.2rem;
   font-weight: 500;
   cursor: pointer;
@@ -259,7 +260,7 @@ nav ul li a:hover {
 /* CENNIK */
 
 .cennik {
-  background-color: #06113c;
+  background-color: #050c2b;
   color: #eeeeee;
   display: flex;
   flex-direction: column;
@@ -295,7 +296,7 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: start;
   padding: 20px;
-  border: 4px solid #ff8c32;
+  border: 4px solid #fd7d1b;
   border-radius: 15px;
   transition: all 0.3s ease;
 }
@@ -324,7 +325,7 @@ nav ul li a:hover {
 /* KONTAKT */
 
 .kontakt {
-  background-color: #06113c;
+  background-color: #050c2b;
   color: #eeeeee;
   display: flex;
   flex-direction: column;
@@ -382,6 +383,7 @@ nav ul li a:hover {
   height: 20px;
   padding: 0;
   background: transparent;
+  color: #fd7d1b;
 }
 .kontaktContainerDodatkowe .card .cardInfo {
   padding-left: 20px;
@@ -394,7 +396,7 @@ nav ul li a:hover {
 footer {
   display: flex;
   flex-direction: column;
-  background-color: #06113c;
+  background-color: #050c2b;
   color: #eeeeee;
   border-top: 2px solid #dddddd;
 }
@@ -417,7 +419,7 @@ footer {
   color: #eeeeee;
 }
 .footerInfo ul li a:hover {
-  color: #ff8c32;
+  color: #fd7d1b;
 }
 
 .footerInfoCard {
@@ -436,6 +438,10 @@ footer {
   background-color: rgb(69, 69, 69);
   padding: 8px;
   border-radius: 50%;
+}
+
+.footerInfoCard .ulY i:hover {
+  color: #fd7d1b !important;
 }
 .footerInfoCard h2 {
   padding-bottom: 16px;
